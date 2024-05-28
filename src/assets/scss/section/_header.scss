@@ -1,0 +1,133 @@
+.header__logo {
+    a {
+        display: flex;
+        padding: 15px;
+        margin: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #743339;
+        border-radius: 5px;
+
+        em {
+            display: none;
+        }
+
+        span {
+            display: block;
+            font-size: 1.56rem;
+            line-height: 1.2;
+            text-transform: uppercase;
+            font-weight: 900;
+
+            i {
+                font-weight: 100;
+            }
+        }
+
+    }
+}
+
+.header__menu {
+    .menu {
+        li {
+            margin: 10px;
+            background-color: #410f15;
+            border-radius: 5px;
+            transition: all 0.3s;
+
+            a {
+                font-size: 1rem;
+                display: block;
+                padding: 0.5rem 1rem;
+            }
+
+            span {
+                display: inline-block;
+                vertical-align: 7px;
+            }
+
+            svg {
+                width: 22px;
+                height: 22px;
+                margin-right: 10px;
+                margin-top: 5px;
+            }
+
+            &:hover {
+                background-color: #613338;
+            }
+
+            &.active a {
+                background-color: #613338;
+            }
+        }
+    }
+
+    .keyword {
+        padding: 10px;
+
+        li {
+            display: inline-block;
+
+            a {
+                display: inline-block;
+                padding: 5px 15px;
+                border: 1px solid #2b2b2b;
+                font-size: 0.8rem;
+                border-radius: 40px;
+                margin: 3px 1px;
+                transition: all 0.3s;
+                background-color: var(--black);
+
+                &:hover {
+                    background-color: #613338;
+                    color: var(--white);
+                }
+            }
+
+            &.active a {
+                background-color: #613338;
+                color: var(--white);
+            }
+        }
+    }
+}
+
+.header__sns {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 260px;
+    text-align: center;
+    padding: 15px 0 10px;
+    background-color: var(--blackAlpha100);
+    backdrop-filter: blur(10px);
+
+    li {
+        display: inline-block;
+
+        a {
+            padding: 5px 7px;
+            display: inline-block;
+
+            span {}
+        }
+    }
+}
+
+@media (max-width:960px) {
+    .header__logo {
+        position: fixed;
+        left: 0;
+        top: 0;
+
+        a {
+            span {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

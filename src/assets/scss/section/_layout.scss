@@ -1,0 +1,66 @@
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    z-index: 10000;
+    background-color: var(--black);
+}
+
+#main {
+    max-width: 2000px;
+    height: calc(100vh - 64px);
+    margin: 0 auto;
+    padding-left: 260px;
+    background-color: #111;
+    position: relative;
+}
+
+#footer {
+    text-align: center;
+    background-color: #222;
+    padding: 20px 20px 20px 260px;
+}
+
+#commend,
+#handdrip,
+#caffe,
+#chain,
+#bakery,
+#special,
+#beans {
+    padding: 40px;
+
+    h2 {
+        margin: 0 0.6rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width:960px) {
+    #header {
+        left: -260px;
+    }
+
+    #main {
+        padding-left: 0;
+        margin-top: 100px;
+    }
+
+    #commend,
+    #handdrip,
+    #caffe,
+    #chain,
+    #bakery,
+    #special,
+    #beans {
+        padding: 20px;
+
+        h2 {
+            margin: 0 0.6rem;
+            font-size: 1.25rem;
+        }
+    }
+
+}
