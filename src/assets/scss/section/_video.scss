@@ -76,3 +76,96 @@
         }
     }
 }
+
+//비디오 상세
+.video__view {
+    padding: 2rem;
+
+    .video__play {
+        display: flex;
+        margin-bottom: 1rem;
+        width: 100%;
+
+        .left {
+            width: 70%;
+            position: relative;
+
+            iframe {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        .right {
+            width: 30%;
+            height: 70vh;
+            overflow-y: auto;
+            padding: 20px;
+
+            .right__inner {
+                height: 100%;
+                overflow-y: scroll;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+
+            .right-inner::-webkit-scrollbar {
+                display: none;
+            }
+
+            h3 {
+                text-align: center;
+                background-color: var(--white);
+                color: var(--black);
+                border-radius: 40px;
+                margin-bottom: 0.5rem;
+            }
+
+            li {
+                margin-bottom: 15px;
+                border-bottom: 1px dashed var(--white300);
+                padding-bottom: 10px;
+            }
+        }
+
+    }
+
+    .video__info {
+        .title {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .channel {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 1rem 2rem;
+            border-radius: 40px;
+            margin-bottom: 1rem;
+
+            span {
+                margin-left: 10px;
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    vertical-align: -5px;
+                    margin-right: 5px;
+                }
+            }
+
+            .channelTitle {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .video__desc {
+        white-space: pre-line;
+        line-height: 1.8;
+    }
+
+}

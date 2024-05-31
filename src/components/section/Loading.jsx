@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Loding = () => {
+const Loading = () => {
     return (
         <div className='loading'>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
@@ -15,4 +15,4 @@ const Loding = () => {
     )
 }
 
-export default Loding
+export default Loading

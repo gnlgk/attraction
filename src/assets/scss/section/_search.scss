@@ -40,3 +40,22 @@
         }
     }
 }
+
+.search__more {
+    text-align: center;
+    margin-top: 100px;
+
+    button {
+        padding: 0.5rem 2rem;
+        border-radius: 50px;
+        margin-bottom: 100px;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: var(--black100);
+    }
+
+    button:hover {
+        background-color: #2f2f2f;
+        color: #fff;
+    }
+}

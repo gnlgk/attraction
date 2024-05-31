@@ -67,3 +67,9 @@ npm install react-router-dom axios react-icons react-player sass react-helmet-as
 local folder에서 직접 npm 폴더 생성하여 해결.
 
 - Rapid API를 이용했었는데 데이터를 불러오지 못해서 youtube API로 변경
+
+다른사람 리액트 확인
+git clone "깃헙주소"
++ 파일이름
+git install
+버전확인
