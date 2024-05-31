@@ -1,4 +1,4 @@
-# youtube API를 이용한 여행 사이트
+# youtube API를 이용한 어트랙션 소개 사이트
 - 유투브 API를 이용한 어트랙션 소개 사이트입니다.
 
 ## 작업 순서
@@ -68,10 +68,10 @@ local folder에서 직접 npm 폴더 생성하여 해결.
 
 - Rapid API를 이용했었는데 데이터를 불러오지 못해서 youtube API로 변경
 
-다른사람 리액트 확인
-git clone "깃헙주소"
-+ 파일이름
-git install
-버전확인
+### 다른사람 리액트 확인
+git clone "깃헙주소"   
++ 파일이름   
+git install   
+버전확인   
 
-npm run build
+npm run build   
