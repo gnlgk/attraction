@@ -73,3 +73,5 @@ git clone "깃헙주소"
 + 파일이름
 git install
 버전확인
+
+npm run build
