@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Logo = () => {
     return (
@@ -9,7 +9,7 @@ const Logo = () => {
                 <span>coffee<br /><i>youtube</i></span>
             </Link>
         </h1>
-    )
+    );
 }
 
-export default Logo
+export default Logo;

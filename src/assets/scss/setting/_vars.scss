@@ -1,6 +1,7 @@
 :root {
-    --mainfont-nanum: "nanumSquareNeo";
+    --mainfont-nanum: "jua";
     --mainfont-nexon: "nexonLv1";
+    --mainfont: "danJungHae";
 
     --black: #000;
     --black100: #111;
@@ -16,8 +17,43 @@
     --white400: #bbb;
     --white500: #aaa;
 
+    --mainColor: #FFF8EA;
+    --subColor: #9E7676;
+    --midColor: #815B5B;
+    --pointColor: #594545;
+
+    --main-bg-color: #d6b9a4;
+  --cup-color: #222;
+  --cup-width: 30vw;
+  --cup-height: 24vw;
+  --cup-handle-width: 5vw;
+  --cup-handle-height: calc(2 * var(--cup-handle-width));
+  --cup-border-width: 2vw;
+  --cup-inside-width: calc(var(--cup-width) - var(--cup-border-width));
+  --cup-inside-height: calc(var(--cup-height) - var(--cup-border-width));
+  --border-width: 1vw;
+  --main-border: var(--border-width) solid var(--cup-color);
+  --plate-width: 25vw;
+  --plate-height: 2vw;
+  --coffee-bottom: 80%;
+  --water-bottom: 0;
+  --milk-bottom: 0;
+  --liquor-bottom: 0;
+  --whipped_cream-bottom: 0;
+  --steamed_milk-bottom: 0;
+  --milk_foam-bottom: 0;
+  --chocolate-bottom: 0;
+  --coffee-color: #3c302f;
+  --water-color: #b1dce2;
+  --milk-color: #f0ebe5;
+  --liquor-color: #fc8626;
+  --whipped_cream-color: #fceecb;
+  --milk_foam-color: #fceecb;
+  --steamed_milk-color: #ffd7b3;
+  --chocolate-color: #391e09;
+
     // 폰트 셋팅
-    font-family: var(--mainfont-nanum), var(--mainfont-nexon);
+    font-family: var(--mainfont-nanum),var(--mainfont);
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;

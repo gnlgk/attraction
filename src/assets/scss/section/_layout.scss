@@ -2,25 +2,27 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 260px;
+    width: 240px;
     height: 100%;
     z-index: 10000;
-    background-color: var(--black);
+    background-color: var(--mainColor);
 }
 
 #main {
     max-width: 2000px;
+    height: auto;
     min-height: 100vh;
     margin: 0 auto;
-    padding-left: 260px;
-    background-color: #111;
+    padding-left: 240px;
+    background-color: var(--subColor);
     position: relative;
 }
 
 #footer {
     text-align: center;
-    background-color: #222;
+    background-color: var(--black200);
     padding: 20px 20px 20px 260px;
+    position: relative;
 }
 
 #commend,

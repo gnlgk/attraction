@@ -53,27 +53,27 @@ export const headerMenus = [
 export const searchKeywords = [
     {
         title: "espresso",
-        src: "/espresso"
+        src: "/search/espresso"
     },
     {
         title: "americano",
-        src: "/americano"
+        src: "/search/americano"
     },
     {
         title: "cappuccino",
-        src: "/cappuccino"
+        src: "/search/cappuccino"
     },
     {
         title: "latte",
-        src: "/latte"
+        src: "/search/latte"
     },
     {
         title: "mocha",
-        src: "/mocha"
+        src: "/search/mocha"
     },
     {
         title: "affogato",
-        src: "/affogato"
+        src: "/search/affogato"
     }
 ]
 
