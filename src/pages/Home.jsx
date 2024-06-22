@@ -1,24 +1,45 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Main from '../components/section/Main';
+import VideoView from '../components/video/VideoView';
 
 const Home = () => {
     const [selectedCoffee, setSelectedCoffee] = useState('');
+    const [selectedVid, setSelectedVid] = useState('');
+    const [videos, setVideos] = useState([]);
+
+    useEffect(() => {
+        const fetchVideos = async () => {
+            if (!selectedVid) return;
+            try {
+                const response = await fetch(
+                    `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&type=video&q=${selectedVid}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
+                );
+                const data = await response.json();
+                setVideos(data.items);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+        fetchVideos();
+    }, [selectedVid]);
 
     const changeCoffeeType = (coffeeType) => {
+        const coffee = coffeeTypes.find((coffee) => coffee.id === coffeeType);
         setSelectedCoffee(coffeeType);
+        setSelectedVid(coffee.vid);
     };
 
     const coffeeTypes = [
-        { id: 'americano', name: 'Americano' },
-        { id: 'au_lait', name: 'Au lait' },
-        { id: 'capuccino', name: 'Capuccino' },
-        { id: 'corretto', name: 'Corretto' },
-        { id: 'espresso', name: 'Espresso' },
-        { id: 'latte', name: 'Latte' },
-        { id: 'lungo', name: 'Lungo' },
-        { id: 'macchiato', name: 'Macchiato' },
-        { id: 'mocha', name: 'Mocha' },
-        { id: 'ristretto', name: 'Ristretto' },
+        { id: 'americano', name: 'Americano', vid: '커피 아메리카노' },
+        { id: 'au_lait', name: 'Au lait', vid: '커피' },
+        { id: 'capuccino', name: 'Capuccino', vid: '커피 카푸치노' },
+        { id: 'corretto', name: 'Corretto', vid: '커피' },
+        { id: 'espresso', name: 'Espresso', vid: '커피 에스프레소' },
+        { id: 'latte', name: 'Latte', vid: '커피라떼' },
+        { id: 'lungo', name: 'Lungo', vid: '커피 룽고' },
+        { id: 'macchiato', name: 'Macchiato', vid: '커피 마끼아또' },
+        { id: 'mocha', name: 'Mocha', vid: '커피 모카라떼' },
+        { id: 'ristretto', name: 'Ristretto', vid: '커피 리스트레토' },
     ];
 
     return (
@@ -53,6 +74,11 @@ const Home = () => {
                         </div>
                         <div className="plate"></div>
                     </div>
+                </div>
+            </div>
+            <div className="Home__view">
+                <div className="video__inner">
+                    <VideoView videos={videos} />
                 </div>
             </div>
         </Main>
